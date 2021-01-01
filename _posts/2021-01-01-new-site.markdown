@@ -1,0 +1,70 @@
+---
+title:  "A new site - and a look back at the old"
+tags: webdev retrospective updates
+category: Software-Development
+---
+
+I have a habit of doing this - working on a new project, such as a blog, bot for Discord, website, or just any other project that comes to mind at a given time, abandoning it after a while, and then recreating it when the project idea comes back to mind a couple of months later. Well, no longer! I'll be posting blogs here hopefully more regularly than once-in-forever about various things
+
+If you're curious as to who I am, check out the [About](/about) page for a bit more about myself.
+
+For this first post, I'm going to be taking a little look at the page that was previously here, and how I feel reflecting upon it a little while later. I've [archived the page](https://web.archive.org/web/20210101164012/https://callumfraser.me/), allowing you to take a look back to it yourself if you want!
+
+## Hosting
+
+One of the first considerations I have when I put together a site is how it might be hosted, and for how long. Personal websites are sites you likely wish to remain active indefintely, and as a result one of the first things that comes into the equation for me is cost. Ideally, I'd want the site to cost me as little as possible - having a monthly cost attached without any sustainable income streams related to it brings the risk of not being able to afford upkeep on the service all the time, and then having to take it down prematurely as a result. I decided to use [Github Pages](https://pages.github.com/) in the end.
+
+- It's free at the point of use, which means I need not worry about ongoing costs into the future.
+- The service is managed, meaning I don't need to worry about maintaining it going into the future
+- Github is a developer friendly service that I'm used to and understand how to use quite well.
+
+One possible downside of this choice relates to dynamic content, but it's unlikely that any dynamic content will be included on a personal site - dynamic content would likely be part of other projects with their own seperate hosting considerations.
+
+## Design
+
+When making my previous site, I decided to attempt to challenge myself to design the site while using minimum CSS or JS frameworks. In the end, I was able to create the page using only a Google Fonts stylesheet to include a nice looking font, and the Font Awesome stylesheet to include social symbols at the bottom of the page. I tried to implement the rest of the styling completely by myself, and I feel like I was able to do a pretty good job of it - at least for a singular page.
+
+{% include figure image_path="/assets/posts/2021/01/old-site-header.PNG" alt="Old Site Header - a gray bar with 'Callum Fraser' underlined as a link followed by a starry background with 'Good Evening!' and 'Welcome to my personal site.' written." caption="Simple, but effective - a greeting and a header clearly denoting where you are on the web." %}
+
+Below, I then had some information about myself and the projects I've done in text - I tried to keep it brief and interesting, although the information on the page became somewhat out of date quite quickly - or at least became less relevant than it was before.
+
+For this new website with variable content, I've decided instead to utilise a existing style (namely [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/))... at least, for now. I feel that if I'm going to be making blog posts, it's important for me to focus more on the content rather than the style around them at first - although they still need to be readable! As a result, using a theme that's been put together by the Open Source community, and then proceeding to make my own using similar principles over time seems a lot more effective, and means I can get this post to you today!
+
+## Some Personal Touches
+
+I decided to challenge myself a little and do something fun by making the welcome spread at the top of the page somewhat dynamic. Using a javascript file, `welcoming.js`, I would change the message given initially on the page and the background image on page load depending on what date and time it was.
+
+{% include figure image_path="/assets/posts/2021/01/old-site-header-new-year.PNG" alt="Similar header to previous image, however with the message 'Happy New Year!' and a background with fireworks." caption="How the old homepage looked at the time of writing - fireworks!" %}
+
+While it works, and felt quite novel personally, looking back the code I wrote... wasn't the best.
+
+```javascript
+
+function getGreeting() {
+    const dateTime = new Date();
+    // Seasonal greetings
+    if (dateTime.getDate() == 25 && dateTime.getMonth() == 11) {
+        return seasonalGreetings[0]
+    }
+    if (dateTime.getDate() == 1 && dateTime.getMonth() == 0) {
+        return seasonalGreetings[1]
+    }
+    // Time based greetings
+    if (dateTime.getHours() >= 6 && dateTime.getHours() < 12) {
+        return greetings[0]
+    }
+    if (dateTime.getHours() >= 12 && dateTime.getHours() < 18) {
+        return greetings[1]
+    }
+    if (dateTime.getHours() < 6 || dateTime.getHours() > 17) {
+        return greetings[2]
+    }
+}
+```
+
+I mean, it works, but it's a chain of if statements rather than actually processing what greeting to show in a meaningful way, which isn't very DRY, and the code lies uncommented and refers to indexes in an array, the result of which is unlikely to be clear to someone reading the code back in the future.
+
+This is one of the things I'd like to reimplment in some way, I feel like it's fun to have your website celebrate seasonal holidays alongside you, so expect a post in the near future detailing me trying to go about this a better way!
+
+## Conclusion
+The old site, made in mid 2019, was a cool challenge to create a properly styled site for myself detailing achievements and projects, but now we're entering 2021 I wanted to try and revamp things (and have a place to put my thoughts!), so have moved towards a more blog-oriented site format, and are hoping to implement some of the lessons I've learned while working on this new site going forward!
