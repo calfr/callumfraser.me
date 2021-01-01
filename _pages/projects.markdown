@@ -4,16 +4,16 @@ permalink: /projects/
 title: "Projects"
 
 memory_lane_gallery:
-  - url: /assets/projects/memorylane/initial_view.png
-    image_path: /assets/projects/memorylane/initial_view.png
+  - url: /assets/projects/memorylane/initial_view.PNG
+    image_path: /assets/projects/memorylane/initial_view.PNG
     alt: "placeholder image 1"
     title: "The map can be zoomed and moved to view different areas."
-  - url: /assets/projects/memorylane/message_view.png
-    image_path: /assets/projects/memorylane/message_view.png
+  - url: /assets/projects/memorylane/message_view.PNG
+    image_path: /assets/projects/memorylane/message_view.PNG
     alt: "placeholder image 2"
     title: "Users were able to add messages to locations, which other users could view and 'like'"
-  - url: /assets/projects/memorylane/street_view.png
-    image_path: /assets/projects/memorylane/street_view.png
+  - url: /assets/projects/memorylane/street_view.PNG
+    image_path: /assets/projects/memorylane/street_view.PNG
     alt: "placeholder image 3"
     title: "You could navigate the world in street view, seeing the tags people had left behind, and adding your own."
 
