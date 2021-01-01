@@ -12,7 +12,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Callum Fraser"
 description              : "A personal site for projects, opinions and musings"
-url                      : "https://callumfrasr.me"
+url                      : "https://callumfraser.me"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "calfr/callumfraser.me"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
