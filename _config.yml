@@ -88,11 +88,8 @@ author:
   avatar           : "https://avatars0.githubusercontent.com/u/54330966"
   bio              : " "
   location         : "United Kingdom"
-  email            : "callum@callumfraser.me"
+  email            : "hello@callumfraser.me"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hello@callumfraser.me"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://callumfraser.me"
