@@ -4,7 +4,7 @@
 
 layout: home
 title: "Home"
-tagline: "Welcome to my personal site, for ideas, opinions, projects and more!"
+tagline: "Welcome to my small corner of the internet."
 header:
   overlay_color: "#333"
 author_profile: false
