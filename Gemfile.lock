@@ -262,11 +262,11 @@ GEM
 
 PLATFORMS
   x64-mingw32
-  x86_64-linux-musl
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
   jekyll-include-cache
 
 BUNDLED WITH
-   2.2.2
+   2.2.31
