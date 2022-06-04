@@ -1,0 +1,11 @@
+paginate: 5
+paginate_path: "/posts/num/"
+plugins:
+  - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: posts/:categories/:year/:month/:title/

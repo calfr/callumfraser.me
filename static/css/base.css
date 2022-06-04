@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Catamaran;
+    src: url('/static/fonts/Catamaran-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #1f282e;
+    color: #eeeeee;
+    font-family: 'Catamaran', sans-serif;
+    margin: 0 0 0;
+    font-size: large;
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 20vh; /* Default size for sections, can be changed when needed. */
+    background-size: cover;
+    margin: 0;
+    height: auto;
+    margin-bottom: 15vh;
+    font-size:28px;
+    margin-left:6vw;
+    margin-right:6vw;
+}
+
+.section .title {
+    font-size: 64px;
+}
+.showcase{
+    background-size: cover;
+    height:100vh;
+    margin-bottom: 6vh;
+    margin-left:0vw;
+    margin-right:0vw;
+}
+.morning .showcase{
+    background-image: url("/static/images/welcomespreads/morning.jpg");
+    color: #1f282e;
+}
+.afternoon .showcase{
+    background-image: url("/static/images/welcomespreads/afternoon.jpg")
+}
+.evening .showcase{
+    background-image: url("/static/images/welcomespreads/evening.jpg")
+}
+.morning.variant-1 .showcase{
+    background-image: url("/static/images/welcomespreads/morning-variant-1.jpg");
+    color: #1f282e;
+}
+.afternoon.variant-1 .showcase{
+    background-image: url("/static/images/welcomespreads/afternoon-variant-1.jpg")
+}
+.evening.variant-1 .showcase{
+    background-image: url("/static/images/welcomespreads/evening-variant-1.jpg")
+}
+.christmas .showcase{
+    background-image: url("/static/images/welcomespreads/christmas.jpg")
+}
+.newyear .showcase{
+    background-image: url("/static/images/welcomespreads/newyear.jpg")
+}
+.showcase .title {
+    padding-top: 20vh;
+}
+
+.showcase .subtitle {
+    font-size: 32px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.bio{
+    font-size:28px;
+    margin-left:6vw;
+    margin-right:6vw;
+}
+
+.contain{
+    display: inline-block;
+    width:100%;
+}
+a{
+    color: #eeeeee;
+}
+a:visited {
+    color: #eeeeee;
+}
+
+.page-head {
+
+}
+
+.page-head .namemark{
+    font-size: xx-large;
+    padding: 6px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #1f282e;
+
+}
+
+.navbar a{
+    font-size: x-large;
+    padding: 4px;
+}
+
+.post-head{
+    background-color: #2a3947;
+}
+.pagination{
+    font-size: x-large;
+}
+
+.faded{
+    color: #bbbbbb;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.page-footer{
+    width:100%;
+    background-color: #7ea1ec;
+    margin-bottom:0px;
+    margin-top:auto;
+}
