@@ -8,4 +8,4 @@ defaults:
     scope:
       type: "posts"
     values:
-      permalink: posts/:categories/:year/:month/:title/
+      permalink: :categories/:year/:month/:title/
